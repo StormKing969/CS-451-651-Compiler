@@ -1,0 +1,124 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10+>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<5>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Long and Double Basic Types): I initialized the long and double 
+                                            just like the int was created for 
+                                            us. Afterwards I made the changed 
+                                            needed for each one of them. For 
+                                            example for double, I had to check 
+                                            if the type was a double. However I 
+                                            was unable to make it work. The 
+                                            first issue was the fact that I 
+                                            kept getting "type double not equal 
+                                            to type int" Then when I tired to 
+                                            make changes in the JVariable 
+                                            according to a post in piazza, 
+                                            new types of errors came up
+
+   Problem 2 (Operators): The operators were fairly simple. Since all the 
+                          operators were initialized and created in the previous
+                          projects, all I had to do was edit the codegen and 
+                          analyse of each one of them. Along the way, I
+                          encountered only one error and it was the "!=" 
+                          operator. Turns out that I had initialized that 
+                          operator in two different locations (JAssignment.java 
+                          and JComparison.java) which ended up producing an 
+                          error. But once I removed the one in JAssignment, 
+                          all the operators worked as intended. I also made some
+                          operators work for double and long. The analyse and 
+                          codegen were easy as they were essentially a copy of 
+                          each other. In the analyse we had to tell the program 
+                          what type the input is and in the codegen, we simply 
+                          created a function that does what each token is meant 
+                          to do.
+   
+   Problem 3 (Conditional Expression): Like the previous problem, most of the 
+                                       work needed for conditional expression to
+                                       work was done in prevous projects. All I
+                                       had to do was the codegen and analyse. 
+                                       In analyse, I checked the type of each 
+                                       input that I created (the private 
+                                       variables). Here I found out that the 
+                                       was an error in the way I initialized 
+                                       some of my variables as the .type() 
+                                       method didn't want to work. To fix that 
+                                       issue, I had to change all my JStatement 
+                                       variables into JExpression. Then I 
+                                       checked their types. I also had (after
+                                       talking to the professor) to make sure 
+                                       that the types of my true and false cases
+                                       were the same. I also added an if 
+                                       statement that check if the input is null
+                                       because I kept on getting the null error
+                                       and that seemed to take care of it. For 
+                                       the codegen, using the one given to us in
+                                       the while-loop, I made it work. 
+                                       Essentially what it does is created two 
+                                       strings to store the output. Then I make
+                                       the check and return the string that 
+                                       correspond to it.
+
+   Problem 4 (Switch Statement): I was not able to make it work since I wasn't 
+                                 able to make it work in the previous projects
+
+   Problem 5 (Do-While Statement): For the DO-While, I made the codegen and 
+                                   analyse similar to the while loop given to us
+                                   since they essentially do the same thing. 
+                                   To avoid any null error, I added if 
+                                   statement to check if the variables are null
+                                   If not, they would be analysed. Just like in
+                                   the while loop, I made sure that the 
+                                   "condtion" variable was a boolean. The 
+                                   codegen for this problem is very similar
+                                   to the while loop as they essentially do the 
+                                   same thing. In it, two strings were created 
+                                   to store the result and once the boolean 
+                                   codition is met, the output is returned. 
+
+   Problem 6 (For Statement): Like the previous problems, all I have to edit is
+                              the codegen and analyse since everything else was
+                              done in previous projects. However, I was not
+                              able to make it was since I keep getting the same 
+                              error. The similar question was posted on piazza 
+                              and according to it, a local context must be 
+                              created to store the "i". I tried creating a 
+                              local context using one that was created in 
+                              Block.java as a reference but for now it only 
+                              compiles but I keep getting the same error. 
+
+   Problem 7 (Break Statement): I was not able to make it work since I wasn't 
+                                able to make it work in the previous projects
+
+   Problem 8 (Continue Statement): I was not able to make it work since I wasn't 
+                                   able to make it work in the previous projects
+
+   Problem 9 (Exception Handlers): I was not able to make it work since I wasn't 
+                                   able to make it work in the previous projects
+
+   Problem 10 (Interface Type Declaration): I was not able to make it work since
+                                            I wasn't able to make it work in the
+                                            previous projects
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...
